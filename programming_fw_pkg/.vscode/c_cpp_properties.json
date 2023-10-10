@@ -1,0 +1,35 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/leonkoch/Distrobox/Ubuntu22/ros2_ws/install/spawn_object_interfaces/include/**",
+        "/home/leonkoch/Distrobox/Ubuntu22/ros2_ws/install/pm_robot_interfaces/include/**",
+        "/home/leonkoch/Distrobox/Ubuntu22/ros2_ws/install/pm_pneumatic_controller/include/**",
+        "/home/leonkoch/Distrobox/Ubuntu22/ros2_ws/install/pm_lights_controller/include/**",
+        "/home/leonkoch/Distrobox/Ubuntu22/ros2_ws/install/pm_msgs/include/**",
+        "/home/leonkoch/Distrobox/Ubuntu22/ros2_ws/install/pm_moveit_interfaces/include/**",
+        "/home/leonkoch/Distrobox/Ubuntu22/ros2_ws/install/pm_hardware_interface/include/**",
+        "/home/leonkoch/Distrobox/Ubuntu22/ros2_ws/install/pm_client/include/**",
+        "/home/leonkoch/Distrobox/Ubuntu22/ros2_ws/install/open62541/include/**",
+        "/home/leonkoch/Distrobox/Ubuntu22/ros2_ws/install/control_msgs/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/leonkoch/Distrobox/Ubuntu22/ros2_ws/src/match_pm_robot/open62541/include/**",
+        "/home/leonkoch/Distrobox/Ubuntu22/ros2_ws/src/match_pm_robot/pm_client/include/**",
+        "/home/leonkoch/Distrobox/Ubuntu22/ros2_ws/src/match_pm_robot/pm_hardware_interface/include/**",
+        "/home/leonkoch/Distrobox/Ubuntu22/ros2_ws/src/match_pm_robot/pm_lights_controller/include/**",
+        "/home/leonkoch/Distrobox/Ubuntu22/ros2_ws/src/match_pm_robot/pm_pneumatic_controller/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

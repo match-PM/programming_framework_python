@@ -1,0 +1,244 @@
+{
+    "programs": {
+        "pick_and_place_example": {
+            "Move to pre-grasping Point Gonio_right": {
+                "action_class": "MoveToFrame",
+                "parameters": {
+                    "MoveGroup": "Tool",
+                    "TargetFrame": "Grasping_Position",
+                    "Offset (x, y, z)": "0.0, 0.0, 0.02",
+                    "Rotation (x, y, z, w)": "0.0, 0.0, 0.0, 1.0",
+                    "Wait for User Input": false
+                }
+            },
+            "Move to grasping Point": {
+                "action_class": "MoveToFrame",
+                "parameters": {
+                    "MoveGroup": "Tool",
+                    "TargetFrame": "Grasping_Position",
+                    "Offset (x, y, z)": "0.0, 0.0, 0.001",
+                    "Rotation (x, y, z, w)": "0.0, 0.0, 0.0, 1.0",
+                    "Wait for User Input": false
+                }
+            },
+            "Grasp component": {
+                "action_class": "Grasp",
+                "parameters": {
+                    "Tool": "Vacuum_Tool",
+                    "TargetComponent": "Test_Component"
+                }
+            },
+            "Move up to pre-grasping Point Gonio_right": {
+                "action_class": "MoveToFrame",
+                "parameters": {
+                    "MoveGroup": "Tool",
+                    "TargetFrame": "Grasping_Position",
+                    "Offset (x, y, z)": "0.0, 0.0, 0.02",
+                    "Rotation (x, y, z, w)": "0.0, 0.0, 0.0, 1.0",
+                    "Wait for User Input": false
+                }
+            },
+            "Move to intermediate position": {
+                "action_class": "MoveToFrame",
+                "parameters": {
+                    "MoveGroup": "Tool",
+                    "TargetFrame": "Home",
+                    "Offset (x, y, z)": "0.0, 0.0, 0.01",
+                    "Rotation (x, y, z, w)": "0.0, 0.0, 0.0, 1.0",
+                    "Wait for User Input": false
+                }
+            },
+            "Move to pre-release Point Gonio_left": {
+                "action_class": "MoveToFrame",
+                "parameters": {
+                    "MoveGroup": "Tool",
+                    "TargetFrame": "Drop_Position_Gonio_Left",
+                    "Offset (x, y, z)": "0.0, 0.0, 0.02",
+                    "Rotation (x, y, z, w)": "0.0, 0.0, 0.0, 1.0",
+                    "Wait for User Input": false
+                }
+            },
+            "Move to release Point": {
+                "action_class": "MoveToFrame",
+                "parameters": {
+                    "MoveGroup": "Tool",
+                    "TargetFrame": "Drop_Position_Gonio_Left",
+                    "Offset (x, y, z)": "0.0, 0.0, 0.01",
+                    "Rotation (x, y, z, w)": "0.0, 0.0, 0.0, 1.0",
+                    "Wait for User Input": false
+                }
+            },
+            "Release Component": {
+                "action_class": "Release",
+                "parameters": {
+                    "Component": "Test_Component",
+                    "Target": "Gonio_Left_Part_Origin"
+                }
+            },
+            "Move to home Point": {
+                "action_class": "MoveToFrame",
+                "parameters": {
+                    "MoveGroup": "Tool",
+                    "TargetFrame": "Home",
+                    "Offset (x, y, z)": "0.0, 0.0, 0.01",
+                    "Rotation (x, y, z, w)": "0.0, 0.0, 0.0, 1.0",
+                    "Wait for User Input": false
+                }
+            }
+        },
+        "pick_and_place_example2": {
+            "Move to pre-grasping Point Gonio_right": {
+                "action_class": "MoveToFrame",
+                "parameters": {
+                    "MoveGroup": "Tool",
+                    "TargetFrame": "Grasping_Position",
+                    "Offset (x, y, z)": "0.0, 0.0, 0.02",
+                    "Rotation (x, y, z, w)": "0.0, 0.0, 0.0, 1.0",
+                    "Wait for User Input": false
+                }
+            },
+            "Move to grasping Point": {
+                "action_class": "MoveToFrame",
+                "parameters": {
+                    "MoveGroup": "Tool",
+                    "TargetFrame": "Grasping_Position",
+                    "Offset (x, y, z)": "0.0, 0.0, 0.001",
+                    "Rotation (x, y, z, w)": "0.0, 0.0, 0.0, 1.0",
+                    "Wait for User Input": false
+                }
+            },
+            "Grasp component": {
+                "action_class": "Grasp",
+                "parameters": {
+                    "Tool": "Vacuum_Tool",
+                    "TargetComponent": "Test_Component"
+                }
+            },
+            "Move up": {
+                "action_class": "MoveRelative",
+                "parameters": {
+                    "MoveGroup": "Tool",
+                    "Offset (x, y, z)": "0.0, 0.0, 0.05",
+                    "Rotation (x, y, z, w)": "0.0, 0.0, 0.0, 1.0",
+                    "Wait for User Input": false
+                }
+            },
+            "Move to intermediate position": {
+                "action_class": "MoveToFrame",
+                "parameters": {
+                    "MoveGroup": "Tool",
+                    "TargetFrame": "Home",
+                    "Offset (x, y, z)": "0.0, 0.0, 0.01",
+                    "Rotation (x, y, z, w)": "0.0, 0.0, 0.0, 1.0",
+                    "Wait for User Input": false
+                }
+            },
+            "Move to pre-release Point Gonio_left": {
+                "action_class": "MoveToFrame",
+                "parameters": {
+                    "MoveGroup": "Tool",
+                    "TargetFrame": "Drop_Position_Gonio_Left",
+                    "Offset (x, y, z)": "0.0, 0.0, 0.02",
+                    "Rotation (x, y, z, w)": "0.0, 0.0, 0.0, 1.0",
+                    "Wait for User Input": false
+                }
+            },
+            "Move to release Point": {
+                "action_class": "MoveToFrame",
+                "parameters": {
+                    "MoveGroup": "Tool",
+                    "TargetFrame": "Drop_Position_Gonio_Left",
+                    "Offset (x, y, z)": "0.0, 0.0, 0.01",
+                    "Rotation (x, y, z, w)": "0.0, 0.0, 0.0, 1.0",
+                    "Wait for User Input": false
+                }
+            },
+            "Release Component": {
+                "action_class": "Release",
+                "parameters": {
+                    "Component": "Test_Component",
+                    "Target": "Gonio_Left_Part_Origin"
+                }
+            },
+            "Move to home Point": {
+                "action_class": "MoveToFrame",
+                "parameters": {
+                    "MoveGroup": "Tool",
+                    "TargetFrame": "Home",
+                    "Offset (x, y, z)": "0.0, 0.0, 0.01",
+                    "Rotation (x, y, z, w)": "0.0, 0.0, 0.0, 1.0",
+                    "Wait for User Input": false
+                }
+            }
+        },
+        "Move_test": {
+            "Move to Cam": {
+                "action_class": "MoveToFrame",
+                "parameters": {
+                    "MoveGroup": "Tool",
+                    "TargetFrame": "Station_Laser_Bottom_TCP",
+                    "Offset (x, y, z)": "0.0, 0.0, 0.02",
+                    "Rotation (x, y, z, w)": "0.0, 0.0, 0.0, 1.0",
+                    "Wait for User Input": false
+                }
+            },
+            "Move Relative": {
+                "action_class": "MoveRelative",
+                "parameters": {
+                    "MoveGroup": "Tool",
+                    "Offset (x, y, z)": "0.05, 0.0, 0.0",
+                    "Rotation (x, y, z, w)": "0.0, 0.0, 0.0, 1.0",
+                    "Wait for User Input": false
+                }
+            }
+        },
+        "Grasp_and_move_test": {
+            "Move to gonio_right": {
+                "action_class": "MoveToFrame",
+                "parameters": {
+                    "MoveGroup": "Tool",
+                    "TargetFrame": "Grasping_Position",
+                    "Offset (x, y, z)": "0.0, 0.0, 0.03",
+                    "Rotation (x, y, z, w)": "0.0, 0.0, 0.0, 1.0",
+                    "Wait for User Input": false
+                }
+            },
+            "Move to grip component": {
+                "action_class": "MoveToFrame",
+                "parameters": {
+                    "MoveGroup": "Tool",
+                    "TargetFrame": "Grasping_Position",
+                    "Offset (x, y, z)": "0.0, 0.0, 0.001",
+                    "Rotation (x, y, z, w)": "0.0, 0.0, 0.0, 1.0",
+                    "Wait for User Input": false
+                }
+            },
+            "Grip component": {
+                "action_class": "Grasp",
+                "parameters": {
+                    "Tool": "Vacuum_Tool",
+                    "TargetComponent": "Test_Component"
+                }
+            },
+            "Move up": {
+                "action_class": "MoveRelative",
+                "parameters": {
+                    "MoveGroup": "Tool",
+                    "Offset (x, y, z)": "0.0, 0.0, 0.05",
+                    "Rotation (x, y, z, w)": "0.0, 0.0, 0.0, 1.0",
+                    "Wait for User Input": false
+                }
+            },
+            "Move to home": {
+                "action_class": "MoveToFrame",
+                "parameters": {
+                    "MoveGroup": "Tool",
+                    "TargetFrame": "Home",
+                    "Offset (x, y, z)": "0.0, 0.0, 0.01",
+                    "Rotation (x, y, z, w)": "0.0, 0.0, 0.0, 1.0",
+                    "Wait for User Input": false
+                }
+            }
+        }
+    }
+}
